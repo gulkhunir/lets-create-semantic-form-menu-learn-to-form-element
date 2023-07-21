@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hwform</title>
+    <link rel="stylesheet" href="./hwstyle.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Contact Us</h1>
+    </header>
+    <main>
+      <form action="/" method="GET">
+        <section>
+          <h2>How can we help you?</h2>
+          <ul>
+            <li>
+              <label for="uname">Your Name</label>
+              <input type="text" name="username" id="uname" />
+            </li>
+            <li>
+              <label for="uemail">Your E-Mail Address</label>
+              <input type="email" name="email" id="uemail" />
+            </li>
+            <li>
+              <label for="uphone">Your Phone Number</label>
+              <input type="number" name="phone" id="uphone" />
+            </li>
+            <li>
+              <label for="umessage">Your message</label>
+              <textarea
+                name="message"
+                id="umessage"
+                cols="30"
+                rows="4"
+              ></textarea>
+            </li>
+            <li>
+              <label for="findus">How did you find us? </label>
+
+              <select name="" id="">
+                <option value="Web Search">Web Search</option>
+                <option value="Word of Mouth">Word of Mouth</option>
+                <option value="Other">Other</option>
+              </select>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>How should we reply</h2>
+          <ul>
+            <li class="form-control-inline">
+              <input type="radio" name="callme" id="callme" />
+              <label for="callme"> Call me</label>
+            </li>
+            <li class="form-control-inline">
+              <input type="radio" name="semail" id="semail" />
+              <label for="callme"> Send me an email</label>
+            </li>
+            <li class="form-control-inline">
+              <input type="radio" name="noreply" id="noreply" />
+              <label for="noreply"> Don't reply</label>
+            </li>
+          </ul>
+        </section>
+        <hr />
+        <section>
+          <li class="form-control-inline">
+            <input type="checkbox" name="term" id="term" />
+            <label for="term">Accept Terms</label>
+          </li>
+        </section>
+        <section class="button-container">
+          <button class="clear" type="reset">Clear</button>
+          <button type="submit">Submit</button>
+        </section>
+      </form>
+    </main>
+  </body>
+</html>
