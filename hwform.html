@@ -17,15 +17,15 @@
           <ul>
             <li>
               <label for="uname">Your Name</label>
-              <input type="text" name="username" id="uname" />
+              <input type="text" name="username" id="uname" required />
             </li>
             <li>
               <label for="uemail">Your E-Mail Address</label>
-              <input type="email" name="email" id="uemail" />
+              <input type="email" name="email" id="uemail" required />
             </li>
             <li>
               <label for="uphone">Your Phone Number</label>
-              <input type="tel" name="phone" id="uphone" />
+              <input type="tel" name="phone" id="uphone" minlength="5" />
             </li>
             <li>
               <label for="umessage">Your message</label>
@@ -34,12 +34,15 @@
                 id="umessage"
                 cols="30"
                 rows="4"
+                required
+                minlength="10"
+                maxlength="200"
               ></textarea>
             </li>
             <li>
               <label for="findus">How did you find us? </label>
 
-              <select name="findus" id="findus">
+              <select name="findus" id="findus" required>
                 <option value="Web Search">Web Search</option>
                 <option value="Word of Mouth">Word of Mouth</option>
                 <option value="Other">Other</option>
@@ -51,15 +54,33 @@
           <h2>How should we reply</h2>
           <ul>
             <li class="form-control-inline">
-              <input type="radio" name="reply" id="callme" value="callme" />
+              <input
+                type="radio"
+                name="reply"
+                id="callme"
+                value="callme"
+                required
+              />
               <label for="callme"> Call me</label>
             </li>
             <li class="form-control-inline">
-              <input type="radio" name="reply" id="semail" value="semail" />
+              <input
+                type="radio"
+                name="reply"
+                id="semail"
+                value="semail"
+                required
+              />
               <label for="callme"> Send me an email</label>
             </li>
             <li class="form-control-inline">
-              <input type="radio" name="reply" id="noreply" value="noreply" />
+              <input
+                type="radio"
+                name="reply"
+                id="noreply"
+                value="noreply"
+                required
+              />
               <label for="noreply"> Don't reply</label>
             </li>
           </ul>
@@ -67,7 +88,7 @@
         <hr />
         <section>
           <li class="form-control-inline">
-            <input type="checkbox" name="term" id="term" />
+            <input type="checkbox" name="term" id="term" required />
             <label for="term">Accept Terms</label>
           </li>
         </section>
